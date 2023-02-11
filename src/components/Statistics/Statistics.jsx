@@ -3,7 +3,7 @@ import { Section, Title, StatList, Item, Label, Percentage } from './Statistics.
 
 export function Statistics({title, stats}) {
     return (<Section>
-    <Title>{title ? title : "Upload files"}</Title>
+    {title ? <Title>{title}</Title> : <Title>Upload files</Title>}
   
     <StatList>
         {stats.map(({id, label, percentage}) => {
