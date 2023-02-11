@@ -1,4 +1,6 @@
-.item {
+import styled from '@emotion/styled';
+
+export const Friend = styled.li`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,29 +11,28 @@
     background-color: #f2f2f2;
     border-radius: 5px;
     box-shadow: 0px 2px 5px #ccc;
-}
-  
-.avatar {
+`
+export const Avatar = styled.img`
     padding-left: 20px;
     border-radius: 50%;
-}
-  
-.name {
+`
+
+export const Name = styled.p`
     font-size: 18px;
     font-weight: 500;
     margin-left: 10px;
-}
+`
 
-.status__online {
+export const StatusOnline = styled.p`
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background-color: #00CF91;
-}
+`
 
-.status__offline {
+export const StatusOffline = styled.p`
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background-color: #FF005C;
-}
+`
