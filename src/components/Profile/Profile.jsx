@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import {Wrapper, Descr, Avatar, Name, Tag, Location, Stats, StatsItem, StatsLabel, StatsQty  } from './Profile.styled'
+import {Wrapper, Descr, Avatar, Name, Tag, Location, Stats, StatsItem, StatsLabel, StatsQty } from './Profile.styled'
 
 
-export function Profile({ username, tag, location, avatar, stats }) {
+export function Profile({ user: { username, tag, location, avatar, stats }}) {
     return (<Wrapper>
     <Descr>
       <Avatar src={avatar} alt={username} />
